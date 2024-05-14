@@ -1,0 +1,153 @@
+body{background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   }
+    .a1{
+        color: green;
+        text-decoration: none;
+    }
+    .a2{
+        font-size: 200%;
+        text-decoration: none;
+    }
+    .a1:visited{ 
+        color:white;
+    } 
+    .a1:hover{
+        color: black;
+        text-decoration: underline;
+        background-color: red;
+    }
+    .a1:active{
+        color: yellowgreen;
+    }
+    .table1, th1, td1{
+        border: 1px solid black;
+        text-align: center;
+        border-collapse: collapse;
+        padding: 15px;
+        color: red;
+    }
+    .th1{
+        background-color: azure;
+        color: darkblue;
+        font-size: larger;
+        border: 1px solid black;
+    }
+    .td1{
+        border: 1px solid black;
+    }
+
+    .table2, tr2, th2, td2{
+        border: 2px solid;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    .table3, th3, td3 {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        color: darkred;
+    }
+
+    .tr3:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    .th3:nth-child(even), .td3:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    .tr3:hover{
+        background-color: yellowgreen;
+    }
+    .ul1{
+        overflow: hidden;
+        background-color: #333333;
+    }
+    .li1 .a1, a{
+        color: black;
+        text-align: center;
+        padding: 10px;
+        display: inline-block;
+    }
+    .li1{
+        float: left;
+    }
+    .li1 a:hover{
+        background-color: darkolivegreen;
+    }
+    dl{
+        float: right;
+    }
+    dt dd{
+        display: inline-block;
+    }
+    #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+    } 
+    header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: black;
+      }
+      
+      /* Container for flexboxes */
+      section{
+        display: -webkit-box;
+        display: flex;
+      }
+      
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #565555;
+        padding: 20px;
+      }
+      
+      /* Style the list inside the menu */
+      nav ul{
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* Style the footer */
+      footer {
+        background-color: darkgreen;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+    
+
